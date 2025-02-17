@@ -1,15 +1,1 @@
-(Build [1/4]) Hold on, compiling packages...
-  matching LangCorePackage Syntax
-  matching LangCorePackage Syntax
-  matching LangCorePackage Syntax
-  matching LangCorePackage Syntax
-  Compiled package 0 (YourLang)
-(Build [2/4]) Compiled 1 packages in 4ms
-matching YourLang
-matching YourLang
-(Build [3/4]) 5ms to compile back to JS (Starting from package compilation), 1ms to run interpret action
-(Build [4/4]) 5ms to write file
-
---eval() ing--
-
 hello

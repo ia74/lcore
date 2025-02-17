@@ -11,7 +11,7 @@ exec("node " + CompilingLanguage +".js", {
     console.error(`exec error: ${error}`);
     return;
   }
-  console.log(stdout);
+  process.stdout.write(stdout);
   if(!fs.existsSync(`./${CompilingLanguage}-${CompilingLanguageVersion}`)) {
     fs.mkdirSync(`./${CompilingLanguage}-${CompilingLanguageVersion}`);
   }

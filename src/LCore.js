@@ -1,6 +1,6 @@
 class Langcore {
 	modules= [];
-	QUIET= false;
+	QUIET= true;
 	exec = (s) => {
 		this.modules.forEach(modIfo => {
 			const changes = Object.keys(modIfo.do);
@@ -16,11 +16,9 @@ class Langcore {
 			} else {
 				changes.forEach(key => {
 					if (s.includes(modIfo.namespace + key)) {
-						console.log('matching ' + modIfo.name)
 						if(!this.QUIET) console.log(modIfo.name + ' used on ' + key)
 						s = s.replaceAll(modIfo.namespace + key, modIfo.do[key]);
 					;} else if (key.includes('@') && s.includes(key)) {
-						console.log('matching ' + modIfo.name)
 						if (!this.QUIET) console.log(modIfo.name + ' used on ' + key)
 						s = s.replaceAll(key, modIfo.do[key]);
 					}
