@@ -1,0 +1,9 @@
+@lcp:{
+  name: "YourLang Module 0",
+  prefix: @lcp:global,
+  useRegex: false,
+
+  @lcp:definitions
+    'My language will print ': 'console.log(',
+    ', thanks': ')'
+@lcp:end

@@ -1,5 +1,11 @@
 # LangCore
 
+## THIS IS V2
+
+This version is a little better because it unifies packages from LCC/LCM to LCP (LangCore Package [Syntax]) and includes an empty starter project.  
+
+Some things have been changed as well in the [package syntax system.](YourLang/lcp_packages/0.syntaxpkg)
+
 technically a js substitution "framework"
 
 ## what is this
